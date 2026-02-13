@@ -52,7 +52,7 @@ print("Data berhasil di-load ke Database market_data.db!")
 
 # Mari kita tes Query pakai SQL langsung dari Python untuk membuktikan datanya masuk
 kueri_cek = pd.read_sql_query("SELECT * FROM daily_prices", conn)
-display(kueri_cek)
+print(kueri_cek)
 
 # Tutup koneksi (Best Practice)
 conn.close()
