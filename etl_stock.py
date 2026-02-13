@@ -36,7 +36,7 @@ df_master = df_master[['Date', 'Ticker', 'Open', 'High', 'Low', 'Close', 'Volume
 df_master['ETL_Timestamp'] = datetime.now()
 
 print("Data berhasil di-extract dan di-transform!")
-display(df_master)
+print(df_master)
 
 import sqlite3
 
